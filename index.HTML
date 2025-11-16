@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>InsentiveDelayTask - Web Version</title>
+
+    <!-- Cargar CheerpJ -->
+    <script src="https://cjrtnc.leaningtech.com/3.0/loader.js"></script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f8f8f8;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        #app-container {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>InsentiveDelayTask (Versión Web)</h1>
+    <p>La aplicación Swing está cargando... por favor espera unos segundos.</p>
+
+    <div id="app-container"></div>
+
+    <script>
+        cheerpjInit();
+        cheerpjRunJar("InsentiveDelayTask-1.0-SNAPSHOT-jar-with-dependencies.jar", {
+            // La clase principal
+            main: "InsentiveDelayTask"
+        });
+    </script>
+
+</body>
+</html>
